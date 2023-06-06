@@ -1,0 +1,143 @@
+#graph {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .day {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .present {
+    background-color: green;
+    color: white;
+  }
+  
+  .absent {
+    background-color: red;
+    color: white;
+  }
+  .unassigned{
+    background-color: rgb(255, 252, 252);
+    color: rgb(10, 9, 9);
+  }
+  .green{
+    background-color: green;
+    color: white;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+
+  h2, p {
+      font-family: 'Lato', serif;
+      font-size: 16px;
+  }
+  
+  h2 {
+      color: #CF1124;
+  }
+  
+  p {
+      color: #243B53;
+  }
+  
+  .card {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      border-radius: 5px;
+      border-top: solid 4px #CF1124;
+      height: 600px;
+      margin-top: -20%;
+      position: relative;
+      width: 900px;
+  }
+  
+  .background {
+      background-image: url('https://picsum.photos/480/136/?random');
+      background-size: cover;
+      background-position: center;
+      height: 136px;
+      
+  }
+  
+  .content {
+      padding-top:12px;
+      padding-left: 21px;
+      padding-right: 21px;
+  }
+  
+  .profile {
+      position: absolute;
+      top: 78.5px;
+      left: 20px;
+  }
+  
+  .profile img {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      border-radius: 50%;
+      height: 115px;
+  }
+  
+  .header {
+      text-transform: capitalize;
+      max-width: 190px;
+      width: 35%;
+      margin: 0 auto;
+  }
+  
+  .header .name {
+      margin: 0px;
+  }
+  
+  .header .location {
+      margin-top: 7px;
+      margin-bottom: 0px;
+  }
+  
+  .info { 
+      margin-top: 21px;
+  }
+  
+  .labels {
+      display: flex;
+      margin-top: 20px;
+  }
+  
+  .labels .label {
+      flex-grow: 1;
+      word-wrap: break-word;
+      width: 0;
+  }
+  
+  .labels .label p {
+      margin-bottom: 5px;
+      margin-top: 0px;
+  }
+  
+  .labels .label h2 {
+      margin: 0px;
+  }
+  .styled-butto {
+    background-color: transparent; /* Green background color */
+    color: white; 
+    opacity: 0.2;/* Text color */
+    border: none; /* Remove border */
+    padding: 8px 16px; /* Add padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it a block element */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer; /* Add cursor pointer */
+    border-radius: 4px; /* Add border radius */
+    width: 100%;
+  }
+  
+  .styled-butto:hover {
+    background-color: #45454a; /* Darker background color on hover */
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+  }
+  
