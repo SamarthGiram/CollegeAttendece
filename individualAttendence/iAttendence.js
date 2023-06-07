@@ -161,7 +161,7 @@ request.onsuccess = function (event) {
           var currentMonth = curYear +"-"+ curMonth;
           
           for (let index = 0; index < attendeceDatalength; index++) {
-            if (attendeceData[index].Date.includes(currentMonth) && attendeceData[index].RollNo == rollNo) {
+            if (attendeceData[index].Date.includes(currentMonth) && attendeceData[index].RollNo == rollNo && attendeceData[index].Status == "P") {
               dayCount = dayCount + 1;
             }
           }
