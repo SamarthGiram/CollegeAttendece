@@ -16,21 +16,30 @@
   <div class="container">
     <div class="title">Forget Username/Password</div>
     <div class="content">
+      <a href="https://api2.callmebot.com/txt/login.php" target="_blank">Signup for OTP generation</a>
+      <p style="color: rgb(178, 179, 179);">Check you telegram for OTP and Password after this Signup</p>
       <form action="#">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Mobile No.</span>
-            <input type="text" id="mobile" placeholder="Enter your mobile" required>
+            <input type="number" id="mobile" placeholder="Enter number" onkeyup="onInput()" required>
           </div>
           <div class="input-box">
-            <span class="details">Roll no.</span>
-            <input type="number" id="rollno" placeholder="Enter your Roll no." required>
+            <span class="details">Telegram Username</span>
+            <input type="text" id="username" placeholder="@Username" onkeyup="onInput()" required>
           </div>
-          
-        <div class="button" >
-          <input type="submit" style="margin-left: 225%;" onclick="TwilioNameLookup()" value="Verify">
+          <div class="input-box">
+            <span class="details">Enter OTP</span>
+            <input type="text" id="otp" placeholder="Enter your OTP" onkeyup="onInput()" required>
+          </div>
+          <div class="button" >
+            <input type="submit" style=" margin-left: 0%;margin-top: -5%; width: 130%;" onclick="openNewWindow()" value="Generate OTP">
+          </div>
+
+        <div class="button" style="margin-left: 8%; margin-top: 4.5%">
+          <input type="submit" id="verify" disabled="true" onclick="Verify()" value="Verify">
         </div>
-        <div class="button" >
+        <div class="button" style="margin-top: 0%">
             <input type="submit"  onclick="navigate()"value="Login Page">
           </div>
        
